@@ -1,0 +1,143 @@
+.space {
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+
+}
+
+.sun {
+    margin:0 auto;
+    position: absolute;
+
+}
+
+.sun img{
+    width: 200px;
+    height: 200px; 
+
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+.earth{
+    position: absolute;
+    left: 380px;
+    margin: 0 auto;
+
+}
+
+
+
+.earth img{
+    width: 100px;
+    height: 100px; 
+
+    animation-name: rotate;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.moon-orbit{
+
+    position: absolute;
+    left: 323px;
+    top: -55px;
+    margin: 0 auto;
+    border: 1;
+
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    height: 200px;
+
+    
+    border-radius: 50%;
+
+    animation-name: rotate;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.moon-orbit img{
+    width: 50px;
+    height: 50px;
+
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+.earth-orbit{
+    animation: rotate;
+    position: absolute;
+    border: 2;
+    border-style: solid;
+    border-color: black;
+    width: 550px;
+    height: 550px;
+    margin:0 auto;
+    border-radius: 50%;
+
+
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+.mars-orbit{
+    animation: rotate;
+    position: absolute;
+    border: 2;
+    border-style: solid;
+    border-color: black;
+    width: 900px;
+    height: 900px;
+    margin:0 auto;
+    border-radius: 50%;
+
+
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+.mars{
+    position: absolute;
+    left: 200px;
+    margin: 0 auto;
+}
+
+.mars img{
+    width: 100px;
+    height: 100px;
+
+    animation-name: rotate;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+
